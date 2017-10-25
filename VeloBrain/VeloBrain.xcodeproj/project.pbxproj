@@ -15,6 +15,8 @@
 		768E88F11FA107B200DA9D58 /* VeloBrainUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768E88F01FA107B200DA9D58 /* VeloBrainUITests.swift */; };
 		768E88FF1FA111E700DA9D58 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768E88FE1FA111E700DA9D58 /* ProfileController.swift */; };
 		768E89011FA1125100DA9D58 /* WorkOutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768E89001FA1125100DA9D58 /* WorkOutController.swift */; };
+		7691E30E1FA12AC80012FDD2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7691E30D1FA12ABD0012FDD2 /* AVFoundation.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		7691E3101FA12B4B0012FDD2 /* InProgressController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7691E30F1FA12B4B0012FDD2 /* InProgressController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		768E88F21FA107B200DA9D58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		768E88FE1FA111E700DA9D58 /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
 		768E89001FA1125100DA9D58 /* WorkOutController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkOutController.swift; sourceTree = "<group>"; };
+		7691E30D1FA12ABD0012FDD2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		7691E30F1FA12B4B0012FDD2 /* InProgressController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InProgressController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7691E30E1FA12AC80012FDD2 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +88,7 @@
 				768E88E41FA107B200DA9D58 /* VeloBrainTests */,
 				768E88EF1FA107B200DA9D58 /* VeloBrainUITests */,
 				768E88CC1FA107B200DA9D58 /* Products */,
+				7691E30C1FA12ABC0012FDD2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +107,7 @@
 			children = (
 				768E88CE1FA107B200DA9D58 /* AppDelegate.swift */,
 				768E88FE1FA111E700DA9D58 /* ProfileController.swift */,
+				7691E30F1FA12B4B0012FDD2 /* InProgressController.swift */,
 				768E89001FA1125100DA9D58 /* WorkOutController.swift */,
 				768E88D41FA107B200DA9D58 /* Main.storyboard */,
 				768E88D71FA107B200DA9D58 /* Assets.xcassets */,
@@ -126,6 +133,14 @@
 				768E88F21FA107B200DA9D58 /* Info.plist */,
 			);
 			path = VeloBrainUITests;
+			sourceTree = "<group>";
+		};
+		7691E30C1FA12ABC0012FDD2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7691E30D1FA12ABD0012FDD2 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,6 +278,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				768E88CF1FA107B200DA9D58 /* AppDelegate.swift in Sources */,
+				7691E3101FA12B4B0012FDD2 /* InProgressController.swift in Sources */,
 				768E88FF1FA111E700DA9D58 /* ProfileController.swift in Sources */,
 				768E89011FA1125100DA9D58 /* WorkOutController.swift in Sources */,
 			);

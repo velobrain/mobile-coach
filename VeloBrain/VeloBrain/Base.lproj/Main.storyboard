@@ -108,10 +108,10 @@
             </objects>
             <point key="canvasLocation" x="-642" y="-1267"/>
         </scene>
-        <!--In Progress Controller-->
+        <!--In Progess Controller-->
         <scene sceneID="zOc-tS-XiC">
             <objects>
-                <viewController id="rC4-rV-hJb" customClass="InProgressController" sceneMemberID="viewController">
+                <viewController id="rC4-rV-hJb" customClass="InProgessController" customModule="VeloBrain" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DvY-qA-eo0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
