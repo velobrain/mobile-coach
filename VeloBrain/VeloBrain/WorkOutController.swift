@@ -23,12 +23,14 @@ class WorkOutController: UIViewController {
     
     
     //mark instance variables
-    @IBOutlet var speedTextField: UITextField!
-    
    
+   
+   
+    
+    @IBOutlet var speedTextField: UITextField!
     @IBAction func startWorkoutButton(_ sender: Any) {
-        textInputTest()
-        
+       textInputTest()
+   
         /*
         do{
             try getSpeedUtil()
@@ -58,7 +60,7 @@ class WorkOutController: UIViewController {
     }
     
     func getSpeedUtil() throws{
-        guard let speed = speedTextField.text else {
+        guard let speed = speedTextField?.text else {
             throw workOutParamErrors.emptyFast
         }
         guard speed > "35" else {
@@ -71,12 +73,20 @@ class WorkOutController: UIViewController {
     
     //Fix this
     func textInputTest() {
+        guard let textField = speedTextField else {
+            print("TextField is nil")
+            return
+        }
         
-        print(self.speedTextField.text!)
+        guard let text = textField.text else {
+            print("TextField text is nil")
+            return
+        }
         
+        print(text)
+    
     }
-    
-    
+   
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

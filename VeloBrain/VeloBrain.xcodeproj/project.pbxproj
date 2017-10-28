@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		761ED8081FA4CA0B000DDF79 /* launchscreen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 761ED8071FA4CA0B000DDF79 /* launchscreen.jpg */; };
 		768E88CF1FA107B200DA9D58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768E88CE1FA107B200DA9D58 /* AppDelegate.swift */; };
 		768E88D61FA107B200DA9D58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 768E88D41FA107B200DA9D58 /* Main.storyboard */; };
 		768E88D81FA107B200DA9D58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 768E88D71FA107B200DA9D58 /* Assets.xcassets */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		761ED8071FA4CA0B000DDF79 /* launchscreen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = launchscreen.jpg; path = ../../../../launchscreen.jpg; sourceTree = "<group>"; };
 		768E88CB1FA107B200DA9D58 /* VeloBrain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VeloBrain.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		768E88CE1FA107B200DA9D58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		768E88D51FA107B200DA9D58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				768E89001FA1125100DA9D58 /* WorkOutController.swift */,
 				768E88D41FA107B200DA9D58 /* Main.storyboard */,
 				768E88D71FA107B200DA9D58 /* Assets.xcassets */,
+				761ED8071FA4CA0B000DDF79 /* launchscreen.jpg */,
 				768E88D91FA107B200DA9D58 /* LaunchScreen.storyboard */,
 				768E88DC1FA107B200DA9D58 /* Info.plist */,
 			);
@@ -252,6 +255,7 @@
 			files = (
 				768E88DB1FA107B200DA9D58 /* LaunchScreen.storyboard in Resources */,
 				768E88D81FA107B200DA9D58 /* Assets.xcassets in Resources */,
+				761ED8081FA4CA0B000DDF79 /* launchscreen.jpg in Resources */,
 				768E88D61FA107B200DA9D58 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
