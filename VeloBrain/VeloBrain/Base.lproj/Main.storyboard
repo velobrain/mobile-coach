@@ -12,7 +12,7 @@
         <!--Workout-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController id="9pv-A4-QxB" customClass="WorkOutController" customModule="VeloBrain" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="9pv-A4-QxB" customClass="WorkOutController" customModule="VeloBrain" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -88,7 +88,7 @@
                                     <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
-                                    <segue destination="rC4-rV-hJb" kind="presentation" modalPresentationStyle="pageSheet" modalTransitionStyle="crossDissolve" id="C4U-Db-U7R"/>
+                                    <action selector="startWorkoutButton:" destination="9pv-A4-QxB" eventType="touchUpInside" id="PaN-O8-ZVg"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VEg-U4-jyk">
@@ -103,6 +103,9 @@
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Workout" image="first" id="acW-dT-cKf"/>
+                    <connections>
+                        <segue destination="rC4-rV-hJb" kind="show" identifier="goToInProgress" id="fuD-PT-wsl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
@@ -131,9 +134,6 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
-                                <connections>
-                                    <segue destination="pQK-fF-pGf" kind="show" id="g6y-sJ-cSX"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZLa-NE-4er">
                                 <rect key="frame" x="230" y="534" width="72" height="47"/>
@@ -148,6 +148,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="fB5-Gl-H3J"/>
                     </view>
+                    <connections>
+                        <segue destination="pQK-fF-pGf" kind="show" identifier="goToSummary" id="UAe-5M-Amn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JkZ-eP-hWZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -172,14 +175,14 @@
                                 <rect key="frame" x="171" y="375" width="82" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Dismiss"/>
-                                <connections>
-                                    <segue destination="49e-Tb-3d3" kind="show" id="nIG-EB-MMu"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="BTg-un-nmI"/>
                     </view>
+                    <connections>
+                        <segue destination="49e-Tb-3d3" kind="show" identifier="goToMainPage" id="fBL-oh-lDx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hUw-Xn-Lc8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
